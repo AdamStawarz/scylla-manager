@@ -529,7 +529,7 @@ The only supported storage ``provider`` are ``s3`` and ``gcs``.
 ``-T, --snapshot-tag <tag>``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Snapshot tag as read from the backup listing
+
 
 =====
 

@@ -74,7 +74,7 @@ You will have to create a new one.
 task history
 ============
 
-This command shows a details about task run history for a give task.
+
 
 **Syntax:**
 
@@ -101,7 +101,7 @@ In addition to the :ref:`global-flags`, task history takes the following paramet
 ``--limit <number of results>``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Limits the number of returned results.
+
 
 **Default** 10
 

@@ -236,21 +236,6 @@ func isZero(t strfmt.DateTime) bool {
 	return time.Time(t).IsZero()
 }
 
-// FormatError formats messages created by using multierror with
-// errors wrapped with host IP so that each host error is in it's own line.
-func FormatError(msg string) string {
-	const prefix = " "
-
-	// Fairly relaxed IPv4 and IPv6 heuristic pattern, a proper pattern can
-	// be very complex
-	const ipRegex = `([0-9A-Fa-f]{1,4}:){7}[0-9A-Fa-f]{1,4}|(\d{1,3}\.){3}\d{1,3}`
-
-	// Move host errors to newline
-	r := regexp.MustCompile(`(^|: |; )(` + ipRegex + `): `)
-
-	return r.ReplaceAllString(msg, "\n"+prefix+"${2}: ")
-}
-
 // FormatTables returns tables listing if number of tables is lower than
 // threshold. It prints (n tables) or (table_a, table_b, ...).
 func FormatTables(threshold int, tables []string, all bool) string {

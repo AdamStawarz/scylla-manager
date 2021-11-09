@@ -1,0 +1,10 @@
+use: delete
+
+short: Delete backup files in remote locations
+
+long: |
+  This command allows you to delete files that were uploaded during backup procedure.
+  Deduplicated files are persisted unless their reference count drops to zero.
+
+snapshot-tag: |
+  A list of snapshot tags sparated by a comma.

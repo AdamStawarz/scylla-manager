@@ -1,0 +1,9 @@
+use: history -c cluster [flags] <type/task-id>
+
+short: Show run history of a task
+
+long: |
+  This command shows a details about task run history for a given task.
+
+limit: |
+  Limits the number of returned results.
