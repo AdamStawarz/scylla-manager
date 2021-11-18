@@ -41,7 +41,7 @@ func NewCommand(client *managerclient.Client) *cobra.Command {
 }
 
 func (cmd *command) init() {
-	defer flag.MustSetUsages(&cmd.Command, res, "snapshot-tag")
+	defer flag.MustSetUsages(&cmd.Command, res, "cluster", "snapshot-tag")
 
 	w := flag.Wrap(cmd.Flags())
 	w.Cluster(&cmd.cluster)

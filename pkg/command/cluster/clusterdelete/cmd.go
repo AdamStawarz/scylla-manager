@@ -36,7 +36,7 @@ func NewCommand(client *managerclient.Client) *cobra.Command {
 }
 
 func (cmd *command) init() {
-	defer flag.MustSetUsages(&cmd.Command, res)
+	defer flag.MustSetUsages(&cmd.Command, res, "cluster")
 
 	w := flag.Wrap(cmd.Flags())
 	w.Cluster(&cmd.cluster)

@@ -1,4 +1,4 @@
-use: delete
+use: delete --cluster <id|name>
 
 short: Delete a cluster from manager
 

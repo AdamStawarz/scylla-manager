@@ -68,7 +68,7 @@ func newCommand(client *managerclient.Client, update bool) *command {
 }
 
 func (cmd *command) init() {
-	defer flag.MustSetUsages(&cmd.Command, res, "location")
+	defer flag.MustSetUsages(&cmd.Command, res, "cluster", "location")
 
 	w := flag.Wrap(cmd.Flags())
 	w.Cluster(&cmd.cluster)

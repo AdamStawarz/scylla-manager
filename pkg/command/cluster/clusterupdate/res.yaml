@@ -1,4 +1,4 @@
-use: update -c cluster [flags]
+use: update --cluster <id|name> [flags]
 
 short: Modify a cluster
 
@@ -16,8 +16,9 @@ name: |
   This `alias` name can be used with all commands that accept --cluster parameter.
 
 host: |
-  Specifies the hostname or `IP` of the node that will be used to discover other nodes belonging to the cluster.
-  Note that this will be persisted and used every time Scylla Manager starts. You can use either an IPv4 or IPv6 address.
+  Hostname or `IP` of the node that will be used to discover other nodes belonging to the cluster.
+  Note that this will be persisted and used every time Scylla Manager starts.
+  You can use either an IPv4 or IPv6 address.
 
 port: |
   Alternate Scylla Manager agent `port`.
